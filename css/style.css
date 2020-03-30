@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+
+	font-family: 'Open Sans', sans-serif;
+	background: #f4f4f4;
+font-size: 18px;
+line-height: 1.5rem;
+   margin:0;
+  padding:0;
+} 
+.sec2{
+  background:hsl(0, 0%, 98%);
+  border: 1px hsl(0, 0%, 98%) solid;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+   margin-bottom:  5px;
+
+}
+
+header{
+
+	background:hsl(0, 0%, 100%);
+	 	padding: 20px;
+  	  margin: auto;
+	display: block;
+}
+.navbar-header{
+background:hsl(0, 0%, 100%);
+
+}
+.navbar-default{
+background:hsl(0, 0%, 100%);
+border: none;	
+width: 100%;
+align-content: center;
+}
+ #navbar li{
+ text-align:center;
+   
+  display:inline;
+   list-style:none;
+  align-items: center;
+}
+
+#navbar a{
+  text-decoration:none;
+  color:hsl(233, 8%, 62%);
+  text-align: center;
+  font-size: 15px;
+}
+
+#navbar li.current a, #navbar a:hover{
+  color:hsl(136, 65%, 51%);
+  border-bottom: 3px solid hsl(136, 65%, 51%);
+  padding-bottom:13px;
+}
+h1 ,h2,h3 {
+	color:  hsl(233, 26%, 24%);
+	margin:0;
+}
+p
+{
+	 color:hsl(233, 8%, 62%);
+	 padding: 5px;
+	 	 margin-top: 10px;
+margin-bottom: 10px;
+font-size: 12px;
+}
+.req-btn{
+/*background-image:linear-gradient(hsl(136, 65%, 51%),);*/
+  background-image: linear-gradient(to bottom right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+display: block;
+   color: hsl(0, 0%, 98%);
+      
+ text-decoration: none;
+    border: 0;
+        opacity: 0.9;
+   width: 150px;
+   border-radius: 40px;
+   height: 50px;
+   text-align: center;
+}
+
+    
+ .req-btn a{ text-decoration:none;
+ 	  font-size: 15px;
+display: block;
+border-radius: 5px;
+margin: 0;
+text-align: center;
+padding: 10px;
+
+   color: hsl(0, 0%, 98%);
+
+}
+
+.container{
+
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+}
+  
+   .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+     
+ 
+    .showcase{
+
+      background-image:  url(..//img/image-mockups.png),  url(..//img/bg-intro-desktop.svg) ;
+       background-repeat: no-repeat;
+    background-size: contain;
+      background-position: right top, right top;
+border: 1px hsl(0, 0%, 98%) solid;
+
+ min-height:400px;
+    
+        padding: 3rem;
+   
+    overflow: hidden;    
+  }
+
+ #box img{
+ 	padding: 5px;
+ 	margin: 5px;
+ 	width: 25%;
+ }
+ #box h3{ 
+  padding-top:15px;
+   padding-bottom:10px;
+}
+.showcase h1 {
+    font-size: 50px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+#info h2{
+  font-size:35px;
+  margin:0;
+  padding-bottom:10px;
+}
+ 
+
+.news-box-img img {
+	 	width: 90%;
+	 	height: auto;
+     border-radius: 5px;
+     padding: 5px;
+      
+}
+
+#info {
+
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+
+   
+ footer{
+ 	 	background:hsl(233, 26%, 24%);
+ 	  text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    color:  hsl(0, 0%, 100%);
+
+ }
+ footer ul li {
+ 	list-style: none;
+ 	display: list-item;
+
+padding: 3px;
+ }
+  footer ul li a{
+ color:  hsl(0, 0%, 100%);
+ padding: 3px;
+ font-size: 12px;
+ text-decoration: none;
+
+  }
+ footer ul li a:hover{
+ 	 text-decoration: none;
+ 	  color:hsl(136, 65%, 51%);
+ 
+
+ }
+  
+   
+#company{
+  color:  hsl(0, 0%, 98%);
+	 
+  padding:10px 0;
+}
+
+#news{
+	background:   hsl(0, 0%, 98%);
+border:1px solid   hsl(0, 0%, 98%) ;
+}
+  
+#company ul{
+display:inline;
+  padding:0;
+  list-style:none;
+  line-height:1.2em;
+  color:  hsl(0, 0%, 98%);
+
+
+}
+#company ul li
+{
+	list-style: none;
+	display:inline;
+
+	
+}
+ 
+#company ul li a:hover{
+  	  color:  hsl(136, 65%, 51%);
+ 
+
+ } 
+ 
+@media (max-width: 770px){
+   
+   
+#rt-menu
+  {
+     display: none;
+}
+.sec2 #showcase{
+   order: -1;
+ }
+}
+
