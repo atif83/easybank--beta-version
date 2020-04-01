@@ -50,7 +50,7 @@ align-content: center;
 
 #navbar a{
   text-decoration:none;
-  color:hsl(233, 8%, 62%);
+  color:hsl(233, 26%, 24%);
   text-align: center;
   font-size: 15px;
 }
@@ -58,11 +58,12 @@ align-content: center;
 #navbar li.current a, #navbar a:hover{
   color:hsl(136, 65%, 51%);
   border-bottom: 3px solid hsl(136, 65%, 51%);
-  padding-bottom:13px;
+  padding-bottom:auto;
 }
 h1 ,h2,h3 {
 	color:  hsl(233, 26%, 24%);
 	margin:0;
+  padding: 1rem;
 }
 p
 {
@@ -74,13 +75,12 @@ font-size: 12px;
 }
 .req-btn{
 /*background-image:linear-gradient(hsl(136, 65%, 51%),);*/
-  background-image: linear-gradient(to bottom right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-display: block;
-   color: hsl(0, 0%, 98%);
-      
+  background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+     
  text-decoration: none;
-    border: 0;
-        opacity: 0.9;
+   
+   color: hsl(0, 0%, 98%);
+
    width: 150px;
    border-radius: 40px;
    height: 50px;
@@ -93,11 +93,11 @@ display: block;
 display: block;
 border-radius: 5px;
 margin: 0;
-text-align: center;
+text-align: end;
 padding: 10px;
-
+justify-content: center;
    color: hsl(0, 0%, 98%);
-
+width: 80%;
 }
 
 .container{
@@ -114,23 +114,25 @@ padding: 10px;
     .showcase{
 
       background-image:  url(..//img/image-mockups.png),  url(..//img/bg-intro-desktop.svg) ;
+box-sizing: border-box;
        background-repeat: no-repeat;
     background-size: contain;
       background-position: right top, right top;
 border: 1px hsl(0, 0%, 98%) solid;
 
- min-height:400px;
+ min-height:500px;
     
         padding: 3rem;
    
     overflow: hidden;    
   }
-
+img{
+  box-sizing: border-box;
+}
  #box img{
  	padding: 5px;
  	margin: 5px;
- 	width: 25%;
- }
+   }
  #box h3{ 
   padding-top:15px;
    padding-bottom:10px;
@@ -149,8 +151,7 @@ border: 1px hsl(0, 0%, 98%) solid;
 
 .news-box-img img {
 	 	width: 90%;
-	 	height: auto;
-     border-radius: 5px;
+	     border-radius: 5px;
      padding: 5px;
       
 }
@@ -222,19 +223,65 @@ display:inline;
  
 #company ul li a:hover{
   	  color:  hsl(136, 65%, 51%);
- 
+ border-radius: 50%;
+
+
 
  } 
+ .bg-circle:hover {
+
+  	fill: hsl(136, 65%, 51%);
+  }
+#par1:hover {
+
+    color:  hsl(136, 65%, 51%);
+    cursor: pointer;
+  }
+.boxes{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-gap: 10px;
+}
+.inner-box{
+  align-items: center;
+    padding: 1.0rem 1.5rem;
+      text-align: center;
+}
  
+
 @media (max-width: 770px){
-   
-   
+ 
+ .showcase{    background-image:  url(..//img/image-mockups.png),  url(..//img/bg-intro-mobile.svg) ;
+      
+width: 90%;
+ min-height:400px;
+ padding: 5px;
+    
+
+        }
+    
+    .news-box-img img {
+    width: 80%;}
 #rt-menu
   {
-     display: none;
-}
-.sec2 #showcase{
-   order: -1;
+       display: none;
+     }
+.sec2  {
+  display: flex;
+flex-direction:row;
  }
+#flex {
+  display: flex;
+  flex-direction: column;
+
+}
+#a { order:2;}
+#b { order: 1;}
+
+ 
 }
 
+ 
+
+
+ 
